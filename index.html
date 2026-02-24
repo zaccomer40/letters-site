@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Pairing</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weekly Pairing Countdown</h1>
+    <div id="countdown">Loading...</div>
+
+    <hr>
+
+    <div>
+      <button id="signup-btn">Sign Up</button>
+      <h2>Participants:</h2>
+      <ul id="participants-list"></ul>
+    </div>
+
+    <hr>
+
+    <div>
+      <h2>Topics</h2>
+      <input type="text" id="topic-input" placeholder="Suggest a topic">
+      <button id="submit-topic-btn">Submit Topic</button>
+      <ul id="topic-list"></ul>
+    </div>
+
+    <hr>
+
+    <div>
+      <button id="admin-login-btn">Admin Login</button>
+      <button id="trigger-pairing-btn" style="display:none;">Trigger Pairing</button>
+      <h2>Pairings:</h2>
+      <ul id="pairing-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
