@@ -13,29 +13,34 @@
 
     <hr>
 
-    <div>
+    <!-- Participants Section -->
+    <section>
       <button id="signup-btn">Sign Up</button>
-      <h2>Participants:</h2>
+      <h2>Participants</h2>
       <ul id="participants-list"></ul>
-    </div>
+    </section>
 
     <hr>
 
-    <div>
+    <!-- Topics Section -->
+    <section>
       <h2>Topics</h2>
-      <input type="text" id="topic-input" placeholder="Suggest a topic">
-      <button id="submit-topic-btn">Submit Topic</button>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:10px;">
+        <input type="text" id="topic-input" placeholder="Suggest a topic">
+        <button id="submit-topic-btn">Submit Topic</button>
+      </div>
       <ul id="topic-list"></ul>
-    </div>
+    </section>
 
     <hr>
 
-    <div>
+    <!-- Admin / Pairings Section -->
+    <section>
       <button id="admin-login-btn">Admin Login</button>
       <button id="trigger-pairing-btn" style="display:none;">Trigger Pairing</button>
-      <h2>Pairings:</h2>
+      <h2>Pairings</h2>
       <ul id="pairing-list"></ul>
-    </div>
+    </section>
   </div>
 
   <script src="script.js"></script>
